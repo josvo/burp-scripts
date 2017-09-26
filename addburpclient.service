@@ -1,0 +1,10 @@
+[Unit]
+Description=Burp client enabler
+After=syslog.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/addburpclient.sh
+
+[Install]
+WantedBy=multi-user.target
