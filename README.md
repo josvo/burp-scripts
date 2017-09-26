@@ -29,8 +29,8 @@ Install:
 - You will need a own logfile for burp, see here how to to that: https://github.com/qm2k/burp_integration
 - Additionally, you will need a systemd file to control the script; copy the addburpclient.service to /etc/systemd/system/
 - Start the script and enable it on startup:
-- systemctl start addburpclient
-- systemctl enable addburpblient
+  - ```systemctl start addburpclient```
+  - ```systemctl enable addburpclient```
 - When you install a new client, you have to set the password specified in the script
 - From the client, connect with "burp -a l" twice
 - The first connection will fail, the second will succeed
